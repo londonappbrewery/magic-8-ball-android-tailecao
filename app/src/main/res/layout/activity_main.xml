@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
     android:paddingTop="16dp"
+    android:paddingRight="0dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
-</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/text_slogan"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/image_ball_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="75dp"
+        android:paddingBottom="75dp"
+        app:srcCompat="@drawable/ball1"
+        android:contentDescription="@string/img_ball_desc" />
+
+    <Button
+        android:id="@+id/btn_ask"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/btn_text"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+</LinearLayout>
